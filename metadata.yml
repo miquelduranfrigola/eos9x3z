@@ -1,43 +1,45 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos9x3z
+Slug: gram-negative-permeability-proxy
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: Gram-negative activity as a permeability proxy
+Description: Gram-negative and gram-positive MIC data from CoADD was used to train
+  a Chemprop model that predicts activity against Escherichia coli (gram-negative)
+  with respect to Staphylococcus aureus (gram-positive). Active compounds in both
+  pathogens were labeled as permeable, whereas inactive compounds in gram-negative
+  but active in gram-positive were labeled as impermeable.
 Deployment:
-  - Local
-  - Online
+- Local
+- Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
-  - Compound
+Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
+  Similarity search, Generation
+Input:
+- Compound
 Input Dimension: 1
-Output: 
-  - Value
-  - Score
-  - Compound
-  - Probability
-  - Experimental value
-  - ...
+Output:
+- Value
+- Score
+- Compound
+- Probability
+- Experimental value
+- '...'
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: 'The output of this template model should be interpreted like this.
+
+  '
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+- Antimicrobial activity
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+- Biomedical Area 1
+- Biomedical Area 2
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
+- Target Organism 1
+- Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2025
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01984
+Source Code: https://pubs.acs.org/doi/suppl/10.1021/acs.jmedchem.1c01984/suppl_file/jm1c01984_si_001.zip
+License: GPL-3.0-or-later
